@@ -1,20 +1,20 @@
 # varonis-task
 A list of 5 specific configurations with a security impact:
-1. Enable branch protection rules\
-      category: Access Control\
-      impact:  Protects important branches (e.g., main, develop) from unauthorized changes, ensuring that only approved pull requests can be merged.
-2. Enable Dependabot alerts\
-      category: Assessment, Authorization, and Monitoring\
-      impact: enable Dependabot alerts to receive notifications when vulnerabilities are discovered in project dependencies, allowing prompt remediation.
-3. Enable Require Signed Commits setting\
-      category: Identification and Authentication\
-      impact: Enhances code integrity, authentication, and accountability by requiring that all commits to the repository are cryptographically signed by the author.
-4. Enable Private repository visibility\
-      category: Access Control\
-      impact: Restricts access to the repository to only authorized users, enhancing confidentiality and privacy of sensitive code and data.
-5. Enforcing Two-Factor Authentication (2FA)\
-      category: Identification and Authentication\
-      impact: Mitigates the risk of unauthorized access by requiring users to authenticate using a second factor (e.g., SMS, authenticator app) in addition to their password.
+1. Enable branch protection rules
+      - category: Access Control
+      - explain:  Protects important branches (e.g., main, develop) from unauthorized changes, ensuring that only approved pull requests can be merged.
+2. Enable Dependabot alerts - 
+      - category: Assessment, Authorization, and Monitoring
+      - impact: enable Dependabot alerts to receive notifications when vulnerabilities are discovered in project dependencies, allowing prompt remediation.
+3. Enable Require Signed Commits setting
+      - category: Identification and Authentication
+      - impact: Enhances code integrity, authentication, and accountability by requiring that all commits to the repository are cryptographically signed by the author.
+4. Enable Private repository visibility
+      - category: Access Control
+      - impact: Restricts access to the repository to only authorized users, enhancing confidentiality and privacy of sensitive code and data.
+5. Enforcing Two-Factor Authentication (2FA)
+      - category: Identification and Authentication
+      - impact: Mitigates the risk of unauthorized access by requiring users to authenticate using a second factor (e.g., SMS, authenticator app) in addition to their password.
 
 ## Enabling Branch Protection
 Let's explain "Enabling Branch Protection" and detail it:
