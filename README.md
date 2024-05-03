@@ -16,7 +16,7 @@ A list of 5 specific configurations with a security impact:
     category: Identification and Authentication
     explain: Mitigates the risk of unauthorized access by requiring users to authenticate using a second factor (e.g., SMS, authenticator app) in addition to their password.
 
-##Enabling Branch Protection
+## Enabling Branch Protection
 Let's explain "Enabling Branch Protection" and detail it:
 Best practice is to enable branch protection for important branches like 'main' or 'develop'. Branch protection ensures that only authorized changes can be made to these branches, reducing the risk of accidental or unauthorized modifications.
 Branch protection meaning is like putting a lock on the door of your code. It prevents anyone from making changes to important parts of the code without permission. This is especially important for branches like 'main' or 'develop', where the main version of the code is kept.
@@ -25,8 +25,7 @@ In order to fix this, you need to enable branch protection in the repository set
 As a workaround, you can create a separate branch for development work and only merge changes into the main branch after they've been reviewed and tested. However, this relies on manual processes and is less secure than branch protection.
 Enabling branch protection may require contributors to follow stricter rules when making changes to the code. They'll need to create pull requests and get them reviewed before changes can be merged. While this adds a bit of overhead, it ensures a safer and more reliable development process.
 
-Misconfiguration Monitoring Framework Design:
-
+## Misconfiguration Monitoring Framework Design:
 Designing a framework for monitoring and fixing misconfigurations across multiple services requires careful consideration of several aspects including architecture, scalability, extensibility, and security.
 Here's a high-level overview of such a framework:
 
