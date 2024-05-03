@@ -25,6 +25,10 @@ In order to fix this, you need to enable branch protection in the repository set
 As a workaround, you can create a separate branch for development work and only merge changes into the main branch after they've been reviewed and tested. However, this relies on manual processes and is less secure than branch protection.
 Enabling branch protection may require contributors to follow stricter rules when making changes to the code. They'll need to create pull requests and get them reviewed before changes can be merged. While this adds a bit of overhead, it ensures a safer and more reliable development process.
 
+### demonstrates the risk of Branch Protection
+In the demo script we add some file without permission, the file can be a risk file that broke the code.
+When run the script, if branch protection not configure for main branch it success to commit the file, else you get message that the changes rejected because branch protection is working.
+
 ## Misconfiguration Monitoring Framework Design:
 Designing a framework for monitoring and fixing misconfigurations across multiple services requires careful consideration of several aspects including architecture, scalability, extensibility, and security.
 Here's a high-level overview of such a framework:
