@@ -1,20 +1,20 @@
 # varonis-task
 A list of 5 specific configurations with a security impact:
 1. Enable branch protection rules
-    category: Access Control
-    explain:  Protects important branches (e.g., main, develop) from unauthorized changes, ensuring that only approved pull requests can be merged.
+      category: Access Control
+      impact:  Protects important branches (e.g., main, develop) from unauthorized changes, ensuring that only approved pull requests can be merged.
 2. Enable Dependabot alerts - 
-    category: Assessment, Authorization, and Monitoring
-    explain: enable Dependabot alerts to receive notifications when vulnerabilities are discovered in project dependencies, allowing prompt remediation.
+      category: Assessment, Authorization, and Monitoring
+      impact: enable Dependabot alerts to receive notifications when vulnerabilities are discovered in project dependencies, allowing prompt remediation.
 3. Enable Require Signed Commits setting
-    category: Identification and Authentication
-    explain: Enhances code integrity, authentication, and accountability by requiring that all commits to the repository are cryptographically signed by the author.
+      category: Identification and Authentication
+      impact: Enhances code integrity, authentication, and accountability by requiring that all commits to the repository are cryptographically signed by the author.
 4. Enable Private repository visibility
-    category: Access Control
-    explain: Restricts access to the repository to only authorized users, enhancing confidentiality and privacy of sensitive code and data.
+      category: Access Control
+      impact: Restricts access to the repository to only authorized users, enhancing confidentiality and privacy of sensitive code and data.
 5. Enforcing Two-Factor Authentication (2FA)
-    category: Identification and Authentication
-    explain: Mitigates the risk of unauthorized access by requiring users to authenticate using a second factor (e.g., SMS, authenticator app) in addition to their password.
+      category: Identification and Authentication
+      impact: Mitigates the risk of unauthorized access by requiring users to authenticate using a second factor (e.g., SMS, authenticator app) in addition to their password.
 
 ## Enabling Branch Protection
 Let's explain "Enabling Branch Protection" and detail it:
@@ -25,7 +25,7 @@ In order to fix this, you need to enable branch protection in the repository set
 As a workaround, you can create a separate branch for development work and only merge changes into the main branch after they've been reviewed and tested. However, this relies on manual processes and is less secure than branch protection.
 Enabling branch protection may require contributors to follow stricter rules when making changes to the code. They'll need to create pull requests and get them reviewed before changes can be merged. While this adds a bit of overhead, it ensures a safer and more reliable development process.
 
-### demonstrates the risk of Branch Protection
+### Demonstrates the risk of Branch Protection configuration
 In the demo script we add some file without permission, the file can be a risk file that broke the code.
 When run the script, if branch protection not configure for main branch it success to commit the file, else you get message that the changes rejected because branch protection is working.
 
@@ -67,7 +67,3 @@ Here's a high-level overview of such a framework:
 7. Deployment Options:
    - Offer deployment options tailored to different environments, including on-premises, cloud, and hybrid deployments.
    - Provide containerized deployments using Docker or Kubernetes for easier deployment and scalability.
-
-By following these design principles and incorporating the outlined components and features, you can create a robust framework for monitoring and fixing misconfigurations across multiple services.
-
-
